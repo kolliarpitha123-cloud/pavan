@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermarket UI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #2a9d8f;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 12px;
+      background-color: #2a9d8f;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #264653;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>FreshMart Supermarket</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Cart</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Popular Products</h2>
+
+  <div class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200" alt="Apples">
+      <h3>Fresh Apples</h3>
+      <p>₹120/kg</p>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200" alt="Milk">
+      <h3>Milk</h3>
+      <p>₹50/litre</p>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200" alt="Bread">
+      <h3>Bread</h3>
+      <p>₹40</p>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200" alt="Eggs">
+      <h3>Eggs</h3>
+      <p>₹6/egg</p>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 FreshMart. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
